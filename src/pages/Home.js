@@ -9,7 +9,7 @@ const handleClick = () => {
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="overlay">
       <Navbar authToken={authToken} />
       <h1>Find a Fireteam</h1>
       <button className="primary-button" onClick={handleClick}>
