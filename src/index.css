@@ -3,6 +3,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 * {
@@ -13,11 +14,16 @@ h2{
   font-style: italic;
 }
 
+.primary-title {
+  font-size: 90px;
+  color: rgb(255,255,255);
+}
+
 .primary-button {
   color: #fff;
   text-transform: uppercase;
   font-size: 15px;
-  background: linear-gradient(45deg, rgb(254, 48, 114), rgb(255, 89, 64)) ;
+  background: linear-gradient(45deg, rgb(228, 1, 119), rgb(88, 0, 183)) ;
   padding: 12px 30px;
   border-radius: 30px;
   border: none;
@@ -25,7 +31,7 @@ h2{
 }
 
 .primary-button:hover {
-  background: linear-gradient(260deg, rgb(254, 48, 114), rgb(255, 89, 64)) ;
+  background: linear-gradient(260deg,  rgb(228, 1, 119), rgb(88, 0, 183)) ;
 }
 
 .secondary-button {
@@ -44,10 +50,6 @@ h2{
 .secondary-button:hover {
   color: rgb(48,48,48);
   border: solid 2px rgb(48,48,48);
-}
-
-body {
-  text-align: center;
 }
 
 /* ---- Navbar ---- */
@@ -71,10 +73,12 @@ nav .logo {
 
 nav .title {
   color: white;
+  font-size: 35px;
+  letter-spacing: -2px;
 }
 
 nav .nav-button {
-  color: rgb(254, 48, 114);
+  color: rgb(228, 1, 119);
   background-color: rgb(255, 255, 255);
   font-size: 20px;
   padding: 10px 20px;
@@ -91,17 +95,24 @@ nav .nav-button:disabled {
 }
 
 /* ---- Home ---- */
+.home {
+  margin-top: 30vh;
+}
 .overlay {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%), url("https://media.istockphoto.com/vectors/cartoon-silhouette-gamepad-seamless-pattern-background-vector-vector-id985622770?k=20&m=985622770&s=170667a&w=0&h=-pEhv2HkAvg1va_dJ2IbjboSuZ_aZQKFTz_lAqcxdhE= ");
 }
+
+/* alt url: https://thumbs.dreamstime.com/b/seamless-bright-vector-pattern-joysticks-video-game-controller-gaming-cool-print-boys-girls-textiles-sportswear-212032349.jpg */
 
 /* ---- Auth modal ---- */
 .auth-modal {
-  /* position: absolute; */
-  top: 175px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40px;
   margin-left: auto;
   margin-right: auto;
   max-width: 360px;
