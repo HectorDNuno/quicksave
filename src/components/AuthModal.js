@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AuthModal = ({ setShowModal }) => {
+const AuthModal = ({ setShowModal, isSignUp }) => {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
   const [confirmPassword, setConfirmPassword] = useState(null);
@@ -22,15 +22,13 @@ const AuthModal = ({ setShowModal }) => {
     }
   };
 
-  const isSignUp = true;
-
   return (
     <div className="auth-modal">
       <div className="close-icon" onClick={handleClick}>
         x
       </div>
       <h2>{isSignUp ? "Create Account" : "Login"}</h2>
-      <p>By clicking Login you are agreeing to our terms and conditions</p>
+      <p>By clicking submit you are agreeing to our terms and conditions</p>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
