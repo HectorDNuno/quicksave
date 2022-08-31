@@ -69,6 +69,10 @@ nav .logo {
   margin-right: 5px;
 }
 
+nav .title {
+  color: white;
+}
+
 nav .nav-button {
   color: rgb(254, 48, 114);
   background-color: rgb(255, 255, 255);
@@ -83,6 +87,7 @@ nav .nav-button {
 nav .nav-button:disabled {
   background-color: rgb(189, 180, 180);
   color: rgb(193, 42, 90);
+  cursor:auto;
 }
 
 /* ---- Home ---- */
