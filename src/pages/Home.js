@@ -16,12 +16,14 @@ const Home = () => {
   return (
     <div className="overlay">
       <Navbar authToken={authToken} setShowModal={setShowModal} showModal={showModal} setIsSignUp={setIsSignUp} />
-      <h1>Find a Fireteam</h1>
-      <button className="primary-button" onClick={handleClick}>
-        {authToken ? "Sign Out" : "Create Account"}
-      </button>
+      <div className="home">
+        <h1 className="primary-title">Find Your Team</h1>
+        <button className="primary-button" onClick={handleClick}>
+          {authToken ? "Sign Out" : "Create Account"}
+        </button>
 
-      {showModal && <AuthModal setShowModal={setShowModal} isSignUp={isSignUp} />}
+        {showModal && <AuthModal setShowModal={setShowModal} isSignUp={isSignUp} />}
+      </div>
     </div>
   );
 };
