@@ -1,7 +1,11 @@
 import React from "react";
 import arrows from "../components/images/rotate-solid.svg";
 
-const Navbar = ({ authToken }) => {
+const Navbar = ({ authToken, setShowModal, showModal }) => {
+  const handleClick = () => {
+    setShowModal(true);
+  };
+
   return (
     <nav>
       <div className="logo-container">
@@ -9,7 +13,11 @@ const Navbar = ({ authToken }) => {
         <h1> Quicksave </h1>
       </div>
 
-      {!authToken && <button className="nav-button"> Log in </button>}
+      {!authToken && (
+        <button className="nav-button" onClick={handleClick} disabled={showModal}>
+          Log in
+        </button>
+      )}
     </nav>
   );
 };
