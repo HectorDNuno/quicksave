@@ -11,7 +11,7 @@ const Navbar = ({ authToken, setShowModal, showModal, setIsSignUp }) => {
     <nav>
       <div className="logo-container">
         <img className="logo" src={arrows} alt="" />
-        <h1 className="title"> Quicksave </h1>
+        <div className="title"> quicksave </div>
       </div>
 
       {!authToken && (
