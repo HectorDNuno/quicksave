@@ -71,6 +71,12 @@ nav .logo {
   margin-right: 5px;
 }
 
+nav .dark-title {
+  color: black;
+  font-size: 35px;
+  letter-spacing: -2px;
+}
+
 nav .title {
   color: white;
   font-size: 35px;
