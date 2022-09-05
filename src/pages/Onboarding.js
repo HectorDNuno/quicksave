@@ -150,6 +150,20 @@ const Onboarding = () => {
               />
               <label htmlFor="everyone-gender-interest">Everyone</label>
             </div>
+
+            <label htmlFor="about">About me</label>
+
+            <input
+              id="about"
+              type="text"
+              name="about"
+              required={true}
+              placeholder="I like..."
+              valu={""}
+              onChange={handleChange}
+            />
+
+            <input type="submit" />
           </section>
         </form>
       </div>
