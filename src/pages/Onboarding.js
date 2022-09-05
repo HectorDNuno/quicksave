@@ -165,6 +165,12 @@ const Onboarding = () => {
 
             <input type="submit" />
           </section>
+
+          <section>
+            <label htmlFor="url"> Profile Photo </label>
+            <input type="url" name="url" id="url" onChange={handleChange} required={true} />
+            <div className="photo-container"></div>
+          </section>
         </form>
       </div>
     </>
