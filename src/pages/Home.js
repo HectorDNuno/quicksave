@@ -6,16 +6,16 @@ const Home = () => {
   const [showModal, setShowModal] = useState(false);
   const [isSignUp, setIsSignUp] = useState(true);
 
-  const authToken = false;
-
   const handleClick = () => {
     setShowModal(true);
     setIsSignUp(true);
   };
 
+  const authToken = false;
+
   return (
     <div className="overlay">
-      <Navbar authToken={authToken} setShowModal={setShowModal} showModal={showModal} setIsSignUp={setIsSignUp} />
+      <Navbar setShowModal={setShowModal} showModal={showModal} setIsSignUp={setIsSignUp} minimal={false} />
       <div className="home">
         <h1 className="primary-title">Find Your Team</h1>
         <button className="primary-button" onClick={handleClick}>
