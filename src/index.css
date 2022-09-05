@@ -147,6 +147,10 @@ nav .nav-button:disabled {
 
 /* ---- Onboarding Page ---- */
 
+.onboarding {
+  border-top: solid 1px rgb(154,154,154);
+}
+
 .onboarding form {
   display: flex;
   justify-content: center;
@@ -192,6 +196,11 @@ nav .nav-button:disabled {
   border-radius: 10px;
   transition: all 0.3s;
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.onboarding form .multiple-input-container label:hover {
+  border-color: rgb(228, 1, 119);
 }
 
 .onboarding form input[type="number"] {
@@ -203,7 +212,7 @@ nav .nav-button:disabled {
 }
 
 .onboarding form input[type="radio"]:checked + label {
-  border: solid 2px rgb(221,39,22);
+  border: solid 2px rgb(88, 0, 183);
 }
 
 .onboarding form input[type="submit"]:hover {
@@ -213,4 +222,8 @@ nav .nav-button:disabled {
 .onboarding form input[type="submit"]:active {
   background-color: rgb(88, 0, 183);
   color: white;
+}
+
+.onboarding form .photo-container img {
+  width: 100%;
 }
